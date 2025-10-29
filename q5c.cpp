@@ -151,8 +151,7 @@ void Graph::inserirArco(vertex u, vertex v, int w) {
     dist[u][v] = w;
     
     // Não imprime msg se estiver sendo chamado pelo carregarDoArquivo
-    // (A == 0 é um truque para saber se é a carga inicial, 
-    // embora agora A seja incrementado antes, vamos manter a lógica de não poluir o log)
+    // (A == 0 é um truque para saber se é a carga inicial
     if (A > 0 && !estaVazio()) { 
         cout << "Info: Arco " << u << " -> " << v << " (Peso: " << w << ") inserido/atualizado." << endl;
     }
@@ -437,4 +436,5 @@ int main() {
     } while (op != 0);
 
     return 0; 
+
 }
